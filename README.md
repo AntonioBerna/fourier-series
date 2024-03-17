@@ -34,7 +34,4 @@ Finally you can run the program using the following command:
 That's it.
 
 > [!NOTE]
-> For more informations about Fourier series click [here](https://en.wikipedia.org/wiki/Fourier_series#Convergence).
-
-> [!NOTE]
-> For more information about Gibbs phenomenon click [here](https://en.wikipedia.org/wiki/Gibbs_phenomenon).
+> For more information about the Fourier series click [here](https://en.wikipedia.org/wiki/Fourier_series#Convergence). While, for more information about the Gibbs phenomenon click [here](https://en.wikipedia.org/wiki/Gibbs_phenomenon).
