@@ -1,5 +1,3 @@
-// Reference: https://en.wikipedia.org/wiki/Fourier_series#Convergence
-
 #include "settings.h"
 #include "wave.h"
 
