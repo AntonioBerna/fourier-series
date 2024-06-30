@@ -11,18 +11,21 @@ https://github.com/AntonioBerna/fourier-series/assets/60107274/16c3fe8f-530a-4e4
 
 To use my software you will first have to clone the repository using the following command:
 
-```bash
+```shell
 git clone https://github.com/AntonioBerna/fourier-series.git
 ```
 
 now using the `cd fourier-series/` command first and then the `ls` command you will notice the presence of the `build.sh` file. You will need this file to compile the program, and in particular you can use one of the following two commands:
 
-```bash
+```shell
 # Release mode
 ./build.sh
 
 # Debug mode
 ./build.sh debug
+
+# Clean
+./build.sh clean
 ```
 
 > [!NOTE]
@@ -30,7 +33,7 @@ now using the `cd fourier-series/` command first and then the `ls` command you w
 
 Finally you can run the program using the following command:
 
-```bash
+```shell
 ./build/fourier
 ```
 
