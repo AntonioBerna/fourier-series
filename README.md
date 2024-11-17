@@ -6,9 +6,7 @@
 
 ## demo
 
-<!-- https://github.com/AntonioBerna/fourier-series/assets/60107274/16c3fe8f-530a-4e4e-9533-81c4f845d15c -->
-
-<video src="assets/videos/demo.mp4" controls preload></video>
+https://github.com/AntonioBerna/fourier-series/assets/60107274/16c3fe8f-530a-4e4e-9533-81c4f845d15c
 
 > [!NOTE]
 > For more information about the Fourier series click [here](https://en.wikipedia.org/wiki/Fourier_series#Convergence). While, for more information about the Gibbs phenomenon click [here](https://en.wikipedia.org/wiki/Gibbs_phenomenon).
