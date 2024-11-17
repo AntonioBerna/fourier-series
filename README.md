@@ -39,3 +39,12 @@ Finally you can run the program using the following command:
 ```
 
 That's it.
+
+Below is a table of supported commands:
+
+| Command                           | Description                     |
+| :---:                             | :---:                           |
+| <kbd>ESC</kbd>                    | Quit the program                |
+| <kbd>UP</kbd>                     | Increase the `n` terms          |
+| <kbd>DOWN</kbd>                   | Decrease the `n` terms          |
+| <kbd>LEFT</kbd>, <kbd>RIGHT</kbd> | Change wave of Gibbs phenomenon |
