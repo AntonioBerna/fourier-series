@@ -1,33 +1,26 @@
 #include "settings.h"
 #include "wave.h"
 
-int main(void) {
-    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE);
+int32_t main(void) {
+    const window_config_t window_config = WINDOW_CONFIG;
+    const wave_config_t wave_config = WAVE_CONFIG;
+    
+    InitWindow(window_config.width, window_config.height, window_config.title);
     SetTargetFPS(60);
     
-    wave_t wave;
-    wave_init(&wave, WAVE_LENGTH);
-
+    wave_t *wave = wave_create(&wave_config);
+    
     while (!WindowShouldClose()) {
-        wave_key_pressed_events(&wave);
-
+        wave_handle_input(wave);
+        
         BeginDrawing();
         ClearBackground(BLACK);
-
-        DrawText(wave.label, (SCREEN_WIDTH - MeasureText(wave.label, 40)) / 2, 10, 40, WHITE);
-        DrawText(TextFormat("n = %d", wave.n), 10, SCREEN_HEIGHT - 30, 30, WHITE);
-
-        DrawLine(OFFSET, 0, OFFSET, SCREEN_HEIGHT, GRAY);
-        DrawLine(OFFSET, SCREEN_HEIGHT / 2, SCREEN_WIDTH, SCREEN_HEIGHT / 2, GRAY);
-        
-        wave_update(&wave);
-
+        wave_update(wave);
         EndDrawing();
     }
-
+    
+    wave_destroy(wave);
     CloseWindow();
     
-    wave_free(&wave);
-
     return 0;
 }

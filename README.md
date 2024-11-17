@@ -22,13 +22,10 @@ git clone https://github.com/AntonioBerna/fourier-series.git
 now using the `cd fourier-series/` command first and then the `ls` command you will notice the presence of the `build.sh` file. You will need this file to compile the program, and in particular you can use one of the following two commands:
 
 ```shell
-# Release mode
 ./build.sh
 
-# Debug mode
-./build.sh debug
+# or
 
-# Clean
 ./build.sh clean
 ```
 
@@ -38,7 +35,7 @@ now using the `cd fourier-series/` command first and then the `ls` command you w
 Finally you can run the program using the following command:
 
 ```
-./build/fourier
+./bin/fourier
 ```
 
 That's it.

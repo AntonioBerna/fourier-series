@@ -1,24 +1,16 @@
 #pragma once
 
-#include <stdlib.h>
-#include <stdint.h>
+#include "settings.h"
 
-#include "raylib.h"
+float square_wave_k(const uint16_t term);
+float square_wave_radius(const uint16_t term);
+float sawtooth_wave_k(const uint16_t term);
+float sawtooth_wave_radius(const uint16_t term);
 
-typedef struct {
-    float *data;
-    size_t length;
-    uint16_t n; // number of terms for approximations
-    uint8_t type;
-    char *label;
-    float time;
-
-    Vector2 pos;
-    float k; // number of multiples of pi
-    float radius;
-} wave_t;
-
-void wave_init(wave_t *wave, size_t length);
-void wave_key_pressed_events(wave_t *wave);
+wave_t *wave_create(const wave_config_t *config);
+void wave_handle_input(wave_t *wave);
+void wave_draw_epicycles(wave_t *wave);
+void wave_draw_trace(wave_t *wave);
+void wave_draw_ui(const wave_t *wave);
 void wave_update(wave_t *wave);
-void wave_free(wave_t *wave);
+void wave_destroy(wave_t *wave);
