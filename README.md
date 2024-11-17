@@ -1,8 +1,14 @@
 # fourier-series
 
+![GitHub License](https://img.shields.io/github/license/antonioberna/fourier-series)
+![GitHub repo size](https://img.shields.io/github/repo-size/antonioberna/fourier-series)
+![GitHub Created At](https://img.shields.io/github/created-at/antonioberna/fourier-series)
+
 ## demo
 
-https://github.com/AntonioBerna/fourier-series/assets/60107274/16c3fe8f-530a-4e4e-9533-81c4f845d15c
+<!-- https://github.com/AntonioBerna/fourier-series/assets/60107274/16c3fe8f-530a-4e4e-9533-81c4f845d15c -->
+
+<video src="assets/videos/demo.mp4" controls preload fullscreen></video>
 
 > [!NOTE]
 > For more information about the Fourier series click [here](https://en.wikipedia.org/wiki/Fourier_series#Convergence). While, for more information about the Gibbs phenomenon click [here](https://en.wikipedia.org/wiki/Gibbs_phenomenon).
@@ -11,7 +17,7 @@ https://github.com/AntonioBerna/fourier-series/assets/60107274/16c3fe8f-530a-4e4
 
 To use my software you will first have to clone the repository using the following command:
 
-```shell
+```
 git clone https://github.com/AntonioBerna/fourier-series.git
 ```
 
@@ -33,7 +39,7 @@ now using the `cd fourier-series/` command first and then the `ls` command you w
 
 Finally you can run the program using the following command:
 
-```shell
+```
 ./build/fourier
 ```
 
