@@ -19,23 +19,25 @@ To use my software you will first have to clone the repository using the followi
 git clone https://github.com/AntonioBerna/fourier-series.git
 ```
 
-now using the `cd fourier-series/` command first and then the `ls` command you will notice the presence of the `build.sh` file. You will need this file to compile the program, and in particular you can use one of the following two commands:
+now using the `cd fourier-series/` command first and then the `ls` command you will notice the presence of the `Makefile` file. You will need this file to compile the program, and in particular if you want to compile the program  you can use the following command:
 
-```shell
-./build.sh
+```
+make
+```
 
-# or
+If you want to clean the program you can use the following command:
 
-./build.sh clean
+```
+make clean
 ```
 
 > [!NOTE]
-> For more information you can directly consult the `build.sh` file with your favorite text editor.
+> For more information you can directly consult the `Makefile` file with your favorite text editor.
 
 Finally you can run the program using the following command:
 
 ```
-./bin/fourier
+make run
 ```
 
 That's it.
@@ -44,7 +46,6 @@ Below is a table of supported commands:
 
 | Command                           | Description                     |
 | :---:                             | :---:                           |
-| <kbd>ESC</kbd>                    | Quit the program                |
-| <kbd>UP</kbd>                     | Increase the `n` terms          |
-| <kbd>DOWN</kbd>                   | Decrease the `n` terms          |
+| <kbd>UP</kbd>                     | Increase the $n$ terms          |
+| <kbd>DOWN</kbd>                   | Decrease the $n$ terms          |
 | <kbd>LEFT</kbd>, <kbd>RIGHT</kbd> | Change wave of Gibbs phenomenon |
