@@ -159,8 +159,10 @@ void wave_update(wave_t *wave) {
 }
 
 void wave_destroy(wave_t *wave) {
-    if (wave != NULL) {
+    if (wave->data != NULL) {
         free(wave->data);
+    }
+    if (wave != NULL) {
         free(wave);
     }
 }

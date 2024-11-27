@@ -10,7 +10,7 @@ int32_t main(void) {
     
     wave_t *wave = wave_create(&wave_config);
     
-    while (!WindowShouldClose()) {
+    while (!(WindowShouldClose() && !IsKeyPressed(KEY_ESCAPE))) {
         wave_handle_input(wave);
         
         BeginDrawing();
