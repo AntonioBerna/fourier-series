@@ -8,11 +8,11 @@ all:
 	clang $(CFLAGS) -o ./bin/$(TARGET) ./src/main.c ./src/wave.c $(CLIBS) -L./bin/ -I./include/
 	@echo "Build complete."
 
+.PHONY: clean run
+
 clean:
 	$(RM) -r ./bin
 	@echo "Clean complete."
 
 run:
 	./bin/$(TARGET)
-
-.PHONY: clean run
